@@ -10,7 +10,7 @@ Students can write and rewrite their diaries, also teachers can edit their conte
 
 One of the difficult part is setting a right route/path.
 
-WHen I make lists of the tables, it did not show up. 
+When I make lists of the tables, it did not show up. 
 
 I searched up a lot, but it really takes a lot of time.
 
