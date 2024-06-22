@@ -1,0 +1,12 @@
+﻿@model PassionProject.Models.ViewModels.DetailsTeacher
+@{
+    ViewBag.Title = "Details";
+}
+
+<a href="Teacher/List">Go back to list</a>
+<h2>Teacher's Details</h2>
+
+@foreach (var diary in Model.RelatedContents)
+{
+    <a href="/Content/Details/@diary.content_Id">@diary.teacher_fname @diary.teacher_lname</a>
+}

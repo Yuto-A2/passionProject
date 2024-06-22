@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PassionProject.Models.StudentDto>
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Write Your Diary</h2>
+<form method="POST" action="/Diary/Create" name="diaryForm">
+
+
+    <div>
+        <input type="date" name="Post_date" id="post_date" />
+    </div>
+
+    <div>
+        <label for="student_fname">First Name:</label>
+        <input type="text" name="student_fname" id="student_fname" />
+    </div>
+
+    <div>
+        <label for="student_lname">Lasts Name:</label>
+        <input type="text" name="student_lname" id="student_lname"/>
+    </div>
+
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+    </div>
+    <div>
+        <label for="content">Content:</label>
+        <input type="text" name="diary_body" id="diary_body" />
+    </div>
+
+    <div>
+        <input type="submit" value="Add your diary" />
+    </div>
+</form>

@@ -1,0 +1,21 @@
+﻿
+@model PassionProject.Models.ViewModels.DetailsDiary
+@{
+    ViewBag.Title = "Details Content";
+}
+
+<h2>Show Diaries</h2>
+<p><a href="/Diary/List">Go back to List</a></p>
+<p><a href="/Diary/Edit/@Model.SelectedDiary.content_Id"></a></p>
+<p>Post date: @Model.SelectedDiary.Post_date</p>
+<p>Title: @Model.SelectedDiary.title</p>
+<p>Content: @Model.SelectedDiary.diary_body</p>
+<p>Comment: @Model.SelectedDiary.comment</p>
+<p>Account name: @Model.SelectedDiary.student_fname @Model.SelectedDiary.student_lname</p>
+<p>Teacher name: @Model.SelectedDiary.teacher_fname @Model.SelectedDiary.teacher_lname</p>
+
+
+
+
+
+<a href="/Views/Content/Details.cshtml">/Views/Content/Details.cshtml</a>

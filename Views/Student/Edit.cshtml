@@ -1,0 +1,22 @@
+﻿@model PassionProject.Models.StudentDto
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Update Student</h2>
+<form action="/Student/Update/@Model.studentId" method="POST">
+    <div style="display:none;">
+        @*Pass through the student ID*@
+        <input type="text" name="studentId" value="@Model.studentId"/>
+    </div>
+    <div>
+        <label>First Name:</label> <input type="text" name="student_fname" value="@Model.student_fname"/>
+    </div>
+    <div>
+        <label>Last Name:</label> <input type="text" name="student_lname" value="@Model.student_lname"/>
+    </div> 
+    <div>
+        <input type="submit" value="Upadate Student"/>
+    </div>
+</form>
+
