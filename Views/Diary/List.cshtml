@@ -1,0 +1,14 @@
+﻿@model IEnumerable<PassionProject.Models.DiaryDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+@foreach (var Diary in Model)
+{
+    <div>
+        <a href="Details/@Diary.content_Id">@Diary.title</a>
+    </div>
+}

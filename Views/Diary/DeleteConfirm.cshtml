@@ -1,0 +1,16 @@
+﻿@model PassionProject.Models.DiaryDto
+@{
+    ViewBag.Title = "DeleteConfirm";
+}
+
+<h2>Are you sure you want to delete this diary?</h2>
+<a href="/Diary/List">Cancel</a>
+<h2>@Model.title</h2>
+<div>
+    Content: @Model.diary_body
+</div>
+
+<form action="/Diary/Delete/@Model.content_Id" method="POST">
+    <input type="submit" value="Confirm Delete"/>
+</form>
+

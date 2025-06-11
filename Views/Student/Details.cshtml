@@ -1,0 +1,17 @@
+﻿@model PassionProject.Models.ViewModels.DetailsStudent
+@{
+    ViewBag.Title = "Details";
+}
+<p><a href="/Student/List">Go back to list</a></p>
+<p><a href="/Student/Edit/@Model.SelectedStudent.studentId">Update</a></p>
+<p><a href="/Student/DeleteConfirm/@Model.SelectedStudent.studentId">Delete</a></p>
+<h2>@Model.SelectedStudent.student_fname @Model.SelectedStudent.student_lname</h2>
+
+<div>
+    <h3>Student Diaries</h3>
+    @foreach (var diary in Model.KeptDiaries)
+    {
+        <a href="/Content/Details/@diary.content_Id">@diary.title</a>
+    }
+</div>
+

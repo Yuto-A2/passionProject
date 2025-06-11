@@ -1,0 +1,18 @@
+﻿@model IEnumerable<PassionProject.Models.StudentDto>
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Create Student</h2>
+
+<form action="/Student/Create" method="POST">
+    <div>
+        <label>First Name:</label><input type="text" name="student_fname" />
+    </div>
+    <div>
+        <label>Last Name: </label><input type="text" name="student_lname" />
+    </div>
+    <div>
+        <input type="submit" value="Create Student" />
+    </div>
+</form>
